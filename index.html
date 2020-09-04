@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Press Start 2P', cursive; color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; background-image: url('assets/background.jpeg');">
+<body
+    style="font-family: 'Press Start 2P', cursive; color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; background-image: url('assets/background.jpeg');">
 
     <div class="container">
         <div>
@@ -23,8 +24,7 @@
                 <h3 class="section-heading">Hi, my name is Ben.</h3>
             </div>
             <div class="two columns">
-                <a class="button button-primary" target="_blank"
-                    href="https://github.com/benorule">GitHub</a>
+                <a class="button button-primary" target="_blank" href="https://github.com/benorule">GitHub</a>
             </div>
             <div class="two columns">
                 <a class="button button-primary" target="_blank"
@@ -47,10 +47,48 @@
             </thead>
             <tbody>
                 <tr>
+                    <td>Bin Out</td>
+                    <td id="bio">Full stack web application providing a platform for people to hire others to take their bin out
+                         for them. Allows users to login and send requests to other users. Uses an SMS verification API.
+                    </td>
+                    <td>
+                        <a id="myBtn5" class="button button-primary">View</a>
+                    </td>
+                    <td>
+                        <a class="button button-primary" target="_blank"
+                            href="https://bin-out.herokuapp.com/">View</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Burger App</td>
+                    <td id="bio">Full stack web application using a MySQL databse
+                        that allows user to add burgers and change the "devoured" condition.
+                    </td>
+                    <td>
+                        <a id="myBtn4" class="button button-primary">View</a>
+                    </td>
+                    <td>
+                        <a class="button button-primary" target="_blank"
+                            href="https://burger-appl.herokuapp.com/">View</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>README-Generator</td>
+                    <td id="bio">Node.js console application that streamlines the
+                        process of writing a README file for a coding project
+                    </td>
+                    <td>
+                        <a id="myBtn3" class="button button-primary">View</a>
+                    </td>
+                    <td>
+                        <a class="button button-primary" target="_blank"
+                            href="https://github.com/benorule/README-Generator">View</a>
+                    </td>
+                </tr>
+                <tr>
                     <td>EPL Fixture Guide</td>
                     <td id="bio">Website for fans of the English Premier League to stay up to date with upcoming
-                        fixtures, view
-                        the ladder and watch highlight videos</td>
+                        fixtures, view the ladder and watch highlight videos</td>
                     <td>
                         <a id="myBtn" class="button button-primary">View</a>
                     </td>
@@ -95,21 +133,48 @@
 
     var btn2 = document.getElementById("myBtn2");
 
+    var btn3 = document.getElementById("myBtn3");
+
+    var btn4 = document.getElementById("myBtn4");
+
+    var btn5 = document.getElementById("myBtn5");
+
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
         modal.style.display = "block";
-        document.getElementById("imageid").src="assets/eplfixture.jpg";
-        document.getElementById("imageid").alt="epl fixture guid screenshot";
+        document.getElementById("imageid").src = "assets/eplfixture.jpg";
+        document.getElementById("imageid").alt = "epl fixture guid screenshot";
     }
 
     // When the user clicks on the button, open the modal
     btn2.onclick = function () {
         modal.style.display = "block";
-        document.getElementById("imageid").src="assets/codequiz.jpg";
-        document.getElementById("imageid").alt="code quiz screenshot";
+        document.getElementById("imageid").src = "assets/codequiz.jpg";
+        document.getElementById("imageid").alt = "code quiz screenshot";
+    }
+
+    // When the user clicks on the button, open the modal
+    btn3.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById("imageid").src = "assets/readme.jpg";
+        document.getElementById("imageid").alt = "readme generator screenshot";
+    }
+
+    // When the user clicks on the button, open the modal
+    btn4.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById("imageid").src = "assets/burger.jpg";
+        document.getElementById("imageid").alt = "burger app screenshot";
+    }
+
+    // When the user clicks on the button, open the modal
+    btn5.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById("imageid").src = "assets/bin-out.jpg";
+        document.getElementById("imageid").alt = "burger app screenshot";
     }
 
 
